@@ -1,0 +1,90 @@
+[{
+  "name": "Gliese 176 b",
+  "mass": 0.026,
+  "radius": null,
+  "period": 8.7836,
+  "semi_major_axis": 0.066,
+  "temperature": 450.0,
+  "distance_light_year": 30.89,
+  "host_star_mass": 0.45,
+  "host_star_temperature": 3679.0
+},
+{
+  "name": "Upsilon Andromedae c",
+  "mass": 1.981,
+  "radius": null,
+  "period": 241.258,
+  "semi_major_axis": 0.827774,
+  "temperature": null,
+  "distance_light_year": 43.74,
+  "host_star_mass": 1.3,
+  "host_star_temperature": 6183.0
+},
+{
+  "name": "Beta Pictoris b",
+  "mass": 11.0,
+  "radius": 1.65,
+  "period": 7665.0,
+  "semi_major_axis": 9.1,
+  "temperature": 1612.0,
+  "distance_light_year": 64.42,
+  "host_star_mass": 1.76,
+  "host_star_temperature": 7099.0
+},
+{
+  "name": "Rho Coronae Borealis b",
+  "mass": 1.045,
+  "radius": null,
+  "period": 39.8458,
+  "semi_major_axis": 0.2196,
+  "temperature": 614.0,
+  "distance_light_year": 57.0,
+  "host_star_mass": 0.889,
+  "host_star_temperature": 5627.0
+},
+{
+  "name": "55 Cancri e",
+  "mass": 0.02542,
+  "radius": 0.17,
+  "period": 0.736539,
+  "semi_major_axis": 0.01544,
+  "temperature": 1958.0,
+  "distance_light_year": 41.06,
+  "host_star_mass": 0.91,
+  "host_star_temperature": 5196.0
+},
+{
+  "name": "TYC 3667-1280-1 b",
+  "mass": 5.4,
+  "radius": null,
+  "period": 26.468,
+  "semi_major_axis": 0.21,
+  "temperature": 1350.0,
+  "distance_light_year": 1570.0,
+  "host_star_mass": 1.87,
+  "host_star_temperature": 5130.0
+},
+{
+  "name": "TYC 8998-760-1 c",
+  "mass": 6.0,
+  "radius": 1.1,
+  "period": null,
+  "semi_major_axis": 320.0,
+  "temperature": 1240.0,
+  "distance_light_year": 309.4,
+  "host_star_mass": null,
+  "host_star_temperature": 4783.0
+},
+{
+  "name": "V1298 Tauri b",
+  "mass": null,
+  "radius": 0.911,
+  "period": 24.13861,
+  "semi_major_axis": 0.1687,
+  "temperature": 668.0,
+  "distance_light_year": 353.9,
+  "host_star_mass": 1.1,
+  "host_star_temperature": 4970.0
+},
+
+]
