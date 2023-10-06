@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS ; --TODO enter database name
-CREATE DATABASE ; --TODO enter database name
+DROP DATABASE IF EXISTS hyperdrive_db; 
+CREATE DATABASE hyperdrive_db; 
