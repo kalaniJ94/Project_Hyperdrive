@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User, Mission, Planet, Log } = require('../models');
-const withAuth = require('./utils/auth');
+const withAuth = require('./../utils/auth');
 
 // GET homepage data for the user
 router.get('/', withAuth, async (req, res) => {

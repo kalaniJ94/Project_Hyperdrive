@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { Log } = require('../../models');
-const {withAuth} = require('../../utils')
+const {withAuth} = require('../../utils/auth')
 
 //api/logs
 
 //Create new log post for a Mission
-router.post('/', withAuth, async (req, res) => {
+router.post('/', /*withAuth,*/ async (req, res) => {
     try {
         const logData = await Log.create({
             mission_id: req.body.mission_id,
