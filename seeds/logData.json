@@ -1,0 +1,14 @@
+[
+    {
+        "mission_id": 1,
+        "comment": "This is the worst planet ever" 
+    },
+    {
+        "mission_id": 2,
+        "comment": "I got a crazy sunburn on this planet. My hair was destroyed from the humidity" 
+    },
+    {
+        "mission_id": 3,
+        "comment": "Absolutely no water here" 
+    }
+]

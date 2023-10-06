@@ -1,0 +1,17 @@
+[
+    {
+        "user_id": 1,
+        "planet_id": 1,
+        "status": "Complete"
+    },
+    {
+        "user_id": 1,
+        "planet_id": 2,
+        "status": "Complete"
+    },
+    {
+        "user_id": 1,
+        "planet_id": 5,
+        "status": "Complete"
+    }
+]
