@@ -29,6 +29,7 @@ function timerCountdown(lightyears) {
         }
     }, 1000);
 };
+
 function habitablePlanet(isHabitable){
 console.log(isHabitable);
 
