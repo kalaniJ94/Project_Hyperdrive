@@ -35,4 +35,16 @@ router.get('/', withAuth, async (req, res) => {
 
 // capitans log
 
+// get login
+router.get('/login', (req, res) => {
+    // if the user is already logged in redirect
+    if (req.session.logged_in) {
+        res.redirect('/homepage');
+        return;
+    }
+
+    res.render('/login')
+})
+
+
 module.exports = router;
