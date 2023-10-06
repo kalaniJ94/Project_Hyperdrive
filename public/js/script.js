@@ -1,12 +1,15 @@
-
-function getData(){
 const data = require('../../seeds/planetData.json');
 
-
+function getData(){
 var lightyears = (data[2].distance_light_year);
-console.log(lightyears);
+var isHabitable = data[0].habitable;
 
-timerCountdown(lightyears);
+//data [] will be changed based on user input 
+console.log(lightyears);
+console.log(isHabitable);
+
+// timerCountdown(lightyears);
+// habitablePlanet(isHabitable);
 };
 
 function timerCountdown(lightyears) {
@@ -26,5 +29,16 @@ function timerCountdown(lightyears) {
         }
     }, 1000);
 };
+function habitablePlanet(isHabitable){
+console.log(isHabitable);
 
+if(isHabitable){
+    missionSuccess++;
+    //missionSuccess will link to the counter on the dashboard 
+    console.log("Congrats! You have found a habitable planet!")
+} else {
+    console.log("Keep looking!")
+}
+};
 getData();
+
