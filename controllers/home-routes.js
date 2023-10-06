@@ -34,6 +34,19 @@ router.get('/', withAuth, async (req, res) => {
 })
 
 // capitans log
+router.get('', async (req, res) => {
+    try {
+        const logData = await Log.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User
+                }
+            ]
+        })
+    } catch (error) {
+        
+    }
+})
 
 // get login
 router.get('/login', (req, res) => {
