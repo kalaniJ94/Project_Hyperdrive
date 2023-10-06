@@ -33,8 +33,8 @@ router.get('/', withAuth, async (req, res) => {
     }
 })
 
-// capitans log
-router.get('', async (req, res) => {
+// captains log
+router.get('/captainslog/:id', async (req, res) => {
     try {
         const logData = await Log.findByPk(req.params.id, {
             include: [
@@ -42,13 +42,20 @@ router.get('', async (req, res) => {
                     model: User
                 }
             ]
-        })
-    } catch (error) {
+        });
         
+        const log = logData.get({ plain: true });
+
+        res.render('captainslog', {
+            ...log,
+            logged_in: req.session.logged_in
+        });
+    } catch (error) {
+        res.status(500).json(error);
     }
 })
 
-// get login
+// redirect to homepage if the user is already logged in
 router.get('/login', (req, res) => {
     // if the user is already logged in redirect
     if (req.session.logged_in) {
