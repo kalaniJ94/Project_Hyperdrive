@@ -8,7 +8,7 @@ const {withAuth} = require('../../utils')
 router.post('/', withAuth, async (req, res) => {
     try {
         const missionData = await Mission.create({
-            user_id: req.body.user_id,
+            user_id: req.session.user_id,
             planet_id: req.body.planet_id,
             status: req.body.planet_id,
         });
