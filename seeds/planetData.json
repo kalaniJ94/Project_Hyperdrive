@@ -7,18 +7,44 @@
   "temperature": 450.0,
   "distance_light_year": 30.89,
   "host_star_mass": 0.45,
-  "host_star_temperature": 3679.0
+  "host_star_temperature": 3679.0,
+  "Terrain": "Rocky and dry. You'll probably die."
 },
 {
-  "name": "Upsilon Andromedae c",
-  "mass": 1.981,
-  "radius": null,
-  "period": 241.258,
-  "semi_major_axis": 0.827774,
-  "temperature": null,
-  "distance_light_year": 43.74,
-  "host_star_mass": 1.3,
-  "host_star_temperature": 6183.0
+  "name": "CoRoT-2b",
+  "mass": 3.47,
+  "radius": 1.466,
+  "period": 1.742994,
+  "semi_major_axis": 0.02798,
+  "temperature": 1521.0,
+  "distance_light_year": 652.33,
+  "host_star_mass": 0.96,
+  "host_star_temperature": 5625.0,
+  "Terrain": "Humid and hot. You'll most definitely die."
+},
+{
+  "name": "CoRoT-3b",
+  "mass": 21.66,
+  "radius": 1.01,
+  "period": 4.2568,
+  "semi_major_axis": 0.05783,
+  "temperature": 1695.0,
+  "distance_light_year": 2218.0,
+  "host_star_mass": 1.37,
+  "host_star_temperature": 6740.0,
+  "Terrain": "Dry. You'll for sure die."
+},
+{
+  "name": "CoRoT-4b",
+  "mass": 0.72,
+  "radius": 1.19,
+  "period": 9.20205,
+  "semi_major_axis": 0.09,
+  "temperature": 1074.0,
+  "distance_light_year": 2419.0,
+  "host_star_mass": 1.16,
+  "host_star_temperature": 6190.0,
+  "Terrain": "Dry. You'll for sure die."
 },
 {
   "name": "Beta Pictoris b",
@@ -29,7 +55,32 @@
   "temperature": 1612.0,
   "distance_light_year": 64.42,
   "host_star_mass": 1.76,
-  "host_star_temperature": 7099.0
+  "host_star_temperature": 7099.0,
+  "Terrain": "Dry. You'll for sure die."
+},
+{
+  "name": "CT Chamaeleontis b",
+  "mass": 17.0,
+  "radius": 2.2,
+  "period": null,
+  "semi_major_axis": 440.0,
+  "temperature": 2600.0,
+  "distance_light_year": 538.18,
+  "host_star_mass": null,
+  "host_star_temperature": 4200.0,
+  "Terrain": "Too hot to care."
+},
+{
+  "name": "CoRoT-1b",
+  "mass": 1.03,
+  "radius": 1.49,
+  "period": 1.508956,
+  "semi_major_axis": 0.02752,
+  "temperature": 1898.0,
+  "distance_light_year": 2627.0,
+  "host_star_mass": 0.95,
+  "host_star_temperature": 5950.0,
+  "Terrain": "So many craters. On the bright side, you'll probably die."
 },
 {
   "name": "Rho Coronae Borealis b",
@@ -40,7 +91,8 @@
   "temperature": 614.0,
   "distance_light_year": 57.0,
   "host_star_mass": 0.889,
-  "host_star_temperature": 5627.0
+  "host_star_temperature": 5627.0,
+  "Terrain": "Mildly hot, with a spacesuit you'll probably still die."
 },
 {
   "name": "55 Cancri e",
@@ -51,7 +103,44 @@
   "temperature": 1958.0,
   "distance_light_year": 41.06,
   "host_star_mass": 0.91,
-  "host_star_temperature": 5196.0
+  "host_star_temperature": 5196.0,
+  "Terrain": "Has fish, but you'll probably die."
+},
+{
+  "name": "55 Cancri b",
+  "mass": 0.8306,
+  "radius": null,
+  "period": 14.65152,
+  "semi_major_axis": 0.115227,
+  "temperature": 700.0,
+  "distance_light_year": 41.06,
+  "host_star_mass": 0.905,
+  "host_star_temperature": 5196.0,
+  "Terrain": "Tropical and safe. Woo!"
+},
+{
+  "name": "2MASS J2126-8140",
+  "mass": 13.3,
+  "radius": null,
+  "period": null,
+  "semi_major_axis": 6900.0,
+  "temperature": 1800.0,
+  "distance_light_year": 111.4,
+  "host_star_mass": 0.53,
+  "host_star_temperature": 3490.0,
+  "Terrain": "Lots of beautiful oceans and crabs that eat feet. You'll survive, but you won't have feet."
+},
+{
+  "name": "2MASS J21402931+1625183 b",
+  "mass": 20.95,
+  "radius": 0.92,
+  "period": 7336.5,
+  "semi_major_axis": null,
+  "temperature": 2075.0,
+  "distance_light_year": 81.54,
+  "host_star_mass": 0.08,
+  "host_star_temperature": 2300.0,
+  "Terrain": "You'll incinerate. But you'll die happy because its beautiful."
 },
 {
   "name": "TYC 3667-1280-1 b",
@@ -62,7 +151,8 @@
   "temperature": 1350.0,
   "distance_light_year": 1570.0,
   "host_star_mass": 1.87,
-  "host_star_temperature": 5130.0
+  "host_star_temperature": 5130.0,
+  "Terrain": "Hot."
 },
 {
   "name": "TYC 8998-760-1 c",
@@ -73,7 +163,8 @@
   "temperature": 1240.0,
   "distance_light_year": 309.4,
   "host_star_mass": null,
-  "host_star_temperature": 4783.0
+  "host_star_temperature": 4783.0,
+  "Terrain": "A rock climbing mecca."
 },
 {
   "name": "V1298 Tauri b",
@@ -84,7 +175,7 @@
   "temperature": 668.0,
   "distance_light_year": 353.9,
   "host_star_mass": 1.1,
-  "host_star_temperature": 4970.0
-},
-
+  "host_star_temperature": 4970.0,
+  "Terrain": "Atmosphere causes nonstop dance moves."
+}
 ]
