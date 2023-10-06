@@ -1,7 +1,17 @@
 const router = require('express').Router();
 const { User } = require('../models');
-const apiKey = '3db7fef6c0msh02dc16734cc3a68p1497c9jsn2626d897910e';
+const withAuth = require('./utils/auth');
 
-// const loggedIn = require('../utils/'); --> imports authentication function once created 
+// Authorization middleware
+
+// get all missions
+// get total number of misions
+router.get('/', withAuth, async (req, res) => {
+    try {
+        const missionData = await 
+    } catch (error) {
+        
+    }
+})
 
 module.exports = router;
