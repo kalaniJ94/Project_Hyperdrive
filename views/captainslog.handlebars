@@ -1,0 +1,37 @@
+<section>
+    <h2>Captains Log</h2>
+</section>
+<section>
+    <a href="/logout">Logout</a>{{!-- connect to logout.handlebar --}}
+</section>
+{{#if planets.length}} {{!-- change to name of table --}}
+<section>
+    <h3>Previous Visited Planets</h3>
+
+    {{#each planets as |planet|}} 
+    <div class="row mb-2">
+        <div class="col-md-8">
+            <h4><a href="/planet/{{planet.id}}">{{planet.name}}</a></h4> 
+            <ul>
+                <li>{{planet.date}}</li>
+                <li>{{planet.missionsuccess}}</li>
+                <li>{{planet.habitability}}</li>
+                <li>{{planet.terrain}}</li>
+            </ul>
+            <br>
+            <h5>Notes</h5>
+            <form action="/"></form> {{!-- enter in what file we want to send/save the comments in --}}
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">save</button>
+            </form>
+        </div>
+    </div>
+    {{/each}}
+    </div>
+    {{/if}}
+</section>
+
+{{!-- enter in script --}}
+<script src=""></script>
+
