@@ -1,3 +1,14 @@
+//Controls accordion feature 
+import { 
+    Collapse,
+    initTE,
+} from "tw-elements";
+
+initTE({ Collapse });
+
+
+
+
 const data = require('../../seeds/planetData.json');
 
 function getData(){
