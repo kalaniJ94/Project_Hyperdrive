@@ -9,6 +9,9 @@ module.exports = {
 ],
 darkMode: "class",
   theme: {
+    colors: {
+      matrixGreen: '#00d200'
+    },
     extend: {},
   },
   plugins: [require("tw-elements/dist/plugin.cjs")],

@@ -19,7 +19,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: #00d200; /* 2 */
 }
 ::before,
 ::after {
@@ -2529,7 +2529,7 @@ input[type="range"]:active::-webkit-slider-thumb {
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: #00d200;
   /* 2 */
 }
 
