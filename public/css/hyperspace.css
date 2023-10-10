@@ -1,0 +1,12 @@
+*{
+    color: white;
+}
+
+body{
+    background-image: url('../assets/hyperspace\ gif.gif');
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}

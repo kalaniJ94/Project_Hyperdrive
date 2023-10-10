@@ -1,5 +1,10 @@
 *{
-  background-image: url('../assets/images/cockpit_transparent.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    background-image: url('../assets/images/cockpit_transparent.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  h4{
+    color: #00d200;
+  }
