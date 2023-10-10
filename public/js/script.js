@@ -15,6 +15,8 @@ console.log(isHabitable);
 function timerCountdown(lightyears) {
     let count = Math.round(lightyears);
     const timer = setInterval(function () {
+         // let countdown = document.getElementById("countdown").value;
+        // countdown.textContent = count;
         count--;
         
         console.log(count);
@@ -34,8 +36,11 @@ function habitablePlanet(isHabitable){
 console.log(isHabitable);
 
 if(isHabitable){
-    missionSuccess++;
     //missionSuccess will link to the counter on the dashboard 
+    // let habitability = document.getElementById("mission-success").value;
+    // habitability.textContent = missionSuccess;
+    missionSuccess++;
+    
     console.log("Congrats! You have found a habitable planet!")
 } else {
     console.log("Keep looking!")
