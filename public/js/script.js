@@ -1,15 +1,24 @@
 //Controls accordion feature 
-import { 
-    Collapse,
-    initTE,
-} from "tw-elements";
+// import { 
+//     Collapse,
+//     initTE,
+// } from "tw-elements";
 
-initTE({ Collapse });
+// initTE({ Collapse });
 
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
-
+global.document = new JSDOM("index.html").window.document;
 
 const data = require('../../seeds/planetData.json');
+let countdownDisplay = document.getElementById("countdown");
+
+//write Portal function here
+function displayPortal() {
+    var portalButton = document.querySelector("portalButton");
+    portalButton.style.visibility = 'visible';
+};
 
 function getData(){
 var lightyears = (data[2].distance_light_year);
@@ -19,28 +28,30 @@ var isHabitable = data[0].habitable;
 console.log(lightyears);
 console.log(isHabitable);
 
-// timerCountdown(lightyears);
+timerCountdown(lightyears);
 // habitablePlanet(isHabitable);
 };
 
 function timerCountdown(lightyears) {
     let count = Math.round(lightyears);
     const timer = setInterval(function () {
-         // let countdown = document.getElementById("countdown").value;
-        // countdown.textContent = count;
-        count--;
-        
-        console.log(count);
-        var catchTimer = Math.round(lightyears) - 10;
-
-        if (count === catchTimer) {
-            console.log("Would you like to skip ahead?");
-            console.log("Pop up button to skip ahead");
-        } else if (count === 0) {
-            clearInterval(timer);
-            console.log("You have arrived!");
-        }
-    }, 1000);
+            if(countdownDisplay){
+                document.getElementById("countdownDisplay").textContent = count;
+               }
+            count--;
+            
+            console.log(count);
+            var catchTimer = Math.round(lightyears) - 10;
+            
+            if (count === catchTimer) {
+                console.log("Would you like to skip ahead?");
+                console.log("Pop up button to skip ahead");
+                displayPortal();
+            } else if (count === 0) {
+                clearInterval(timer);
+                console.log("You have arrived!");
+            }
+        }, 1000);        
 };
 
 function habitablePlanet(isHabitable){
@@ -59,4 +70,4 @@ if(isHabitable){
 };
 getData();
 
-//write Portal function here
+

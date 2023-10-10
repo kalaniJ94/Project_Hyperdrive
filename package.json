@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run tailwind:css && node server.js",
     "seed": "node seeds/index.js",
-    "tailwind:css": "postcss public/css/output.css -o public/css/output.css"
+    "tailwind:css": "postcss public/css/output.css -o public/css/output.css",
+    "function": "npm run public/js/script.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "express-handlebars": "^7.1.2",
     "express-session": "^1.17.3",
     "handlebars": "^4.7.8",
+    "jsdom": "^22.1.0",
     "mysql2": "^3.6.1",
     "postcss-cli": "^10.1.0",
     "sequelize": "^6.33.0",
