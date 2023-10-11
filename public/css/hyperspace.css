@@ -86,7 +86,7 @@ body{
     .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
     #lightyears{
-        margin: 200px 300px 0px 300px;
+        margin: 15% 30% 0% 30%;
         text-align: center;
         background: rgba(18, 19, 19, 0.7);
         padding: 20px 0px 20px 0px;
