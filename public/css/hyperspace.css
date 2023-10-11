@@ -25,3 +25,21 @@ body{
     top: 30%;
     left: 50%;
 }
+
+#mission-count {
+    position: fixed;
+    top: 19.5%;
+    left: 7%;
+    font-size: 20px;
+    color: #00d200;
+    rotate: 20deg;
+}
+
+#mission-success {
+    position: fixed;
+    top: 24.5%;
+    left: 6.5%;
+    font-size: 20px;
+    color: #00d200;
+    rotate: 20deg;
+}
