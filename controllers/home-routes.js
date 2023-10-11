@@ -20,7 +20,7 @@ router.get('/', withAuth, async (req, res) => {
             ]
         });
 
-        // Serialize creating ana rray of mission objects
+        // Serialize creating an array of mission objects
         const missions = missionData.map((mission) => mission.get({ plain: true }));
 
         // render
@@ -62,6 +62,10 @@ router.get('/captainslog/:id', async (req, res) => {
         res.status(500).json(error);
     }
 })
+
+// hyperspace screen 
+
+// destination
 
 // redirect to homepage if the user is already logged in
 router.get('/login', (req, res) => {
