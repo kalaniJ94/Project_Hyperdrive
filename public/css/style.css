@@ -101,10 +101,18 @@ display: block;
   margin: 20px 300px 0px 300px;
   border-width: 2px;
   border-radius: 5px;
+  background: rgba(18, 19, 19, 0.8);
+}
+#logs2{
+  padding: 0px;
+  margin: 0px;
 }
 
-.login-logout {
-  background: rgba(18, 19, 19, 0.8);
+#login-signup {
+  margin: 0px 0px 0px 20px;
+  background: rgba(18, 19, 19, 0.5);
+  text-align: center;
+  width: 1200px;
 }
 
 .login-btn{
@@ -117,4 +125,9 @@ display: block;
   text-align: center;
   background-color: #00d200;
   margin: 20px 0px 0px 55px;
+}
+
+#entry-page{
+  background: rgba(18, 19, 19, 0.8);
+  margin: auto;
 }
