@@ -33,7 +33,7 @@ router.get('/', withAuth, async (req, res) => {
     }
 })
 
-// captains log
+// captains log --  TODO: scratch id, order ascending ID instead
 router.get('/captainslog/:id', async (req, res) => {
     try {
         const logData = await Mission.findAll( {
@@ -64,8 +64,24 @@ router.get('/captainslog/:id', async (req, res) => {
 })
 
 // hyperspace screen 
+router.get('/hyperspace', async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+})
 
 // destination
+router.get('/destination', async (req, res) => {
+    try {
+        
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+})
 
 // redirect to homepage if the user is already logged in
 router.get('/login', (req, res) => {
