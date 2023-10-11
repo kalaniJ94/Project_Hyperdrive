@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // helpers
-const helpers = exphbs.create({ helpers });
+const hbs = exphbs.create({ helpers });
 
 const sess = {
   secret: process.env.SESSION_SECRET,
@@ -32,8 +32,6 @@ const sess = {
 };
 
 app.use(session(sess));
-
-const hbs = exphbs.create(/*{ helpers }*/); //-->importing custom handlebar helpers if needed here
 
 //Set Handlebars as the default template engine
 app.engine('handlebars', hbs.engine);
