@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const sequelize = require('../config/connection');
 const { User, Mission, Planet, Log } = require('../models');
 const withAuth = require('./../utils/auth');
 
@@ -19,6 +20,28 @@ router.get('/', /*withAuth,*/ async (req, res) => {
                 }
             ]
         });
+        const habitablePlanets = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+                {
+                    model: Planet,
+                    where: {
+                        habitable: true
+                    }
+                },
+            ],
+        })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
 
         // Serialize creating an array of mission objects
         const missions = missionData.map((mission) => mission.get({ plain: true }));
@@ -26,6 +49,8 @@ router.get('/', /*withAuth,*/ async (req, res) => {
         // render
         res.render('homepage', {
             missions,
+            habitablePlanets,
+            missionCount,
             logged_in: req.session.logged_in
         });
     } catch (error) {
@@ -50,11 +75,35 @@ router.get('/captainslog', async (req, res) => {
                 },
             ]
         });
+        const habitablePlanets = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+                {
+                    model: Planet,
+                    where: {
+                        habitable: true
+                    }
+                },
+            ],
+        })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
         
         // Serialize
         const log = logData.map((log) => log.get({ plain: true }));
         res.render('captainslog', {
             ...log,
+            habitablePlanets,
+            missionCount,
             logged_in: req.session.logged_in
         });
     } catch (error) {
@@ -83,18 +132,41 @@ router.get('/destination', async (req, res) => {
                 },
                 {
                     model: Log,
-                    where: {id: req.params.id}
                 },
                 {
                     model: Planet
                 },
             ]
         });
-        
+        const habitablePlanets = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+                {
+                    model: Planet,
+                    where: {
+                        habitable: true
+                    }
+                },
+            ],
+        })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
+
         // Serialize
         const log = logData.map((log) => log.get({ plain: true }));
         res.render('captainslog', {
             ...log,
+            habitablePlanets,
+            missionCount,
             logged_in: req.session.logged_in
         });
     } catch (error) {

@@ -52,6 +52,14 @@ Planet.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
+        Terrain:{
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        habitable:{
+            type: DataTypes.STRING,
+            allowNull: true,
+        }
     },
     {
         sequelize,

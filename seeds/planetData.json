@@ -9,7 +9,7 @@
   "host_star_mass": 0.45,
   "host_star_temperature": 3679.0,
   "Terrain": "Rocky and dry. You'll probably die.",
-  "habitable": false,
+  "habitable": true,
   "image": "../public/assets/images/planet1.jpg"
   
 },
@@ -82,7 +82,7 @@
   "host_star_mass": null,
   "host_star_temperature": 4200.0,
   "Terrain": "Too hot to care.",
-  "habitable": false,
+  "habitable": true,
   "image": "../public/assets/images/planet6.jpg"
 
 },
