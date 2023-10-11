@@ -66,7 +66,7 @@ router.get('/captainslog/:id', async (req, res) => {
 // hyperspace screen 
 router.get('/hyperspace', async (req, res) => {
     try {
-        
+        res.render('hyperspace')
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
@@ -76,7 +76,27 @@ router.get('/hyperspace', async (req, res) => {
 // destination
 router.get('/destination', async (req, res) => {
     try {
+        const logData = await Mission.findAll( {
+            include: [
+                {
+                    model: User
+                },
+                {
+                    model: Log,
+                    where: {id: req.params.id}
+                },
+                {
+                    model: Planet
+                },
+            ]
+        });
         
+        // const log = logData.get({ plain: true });
+        const log = logData.map((log) => log.get({ plain: true }));
+        res.render('captainslog', {
+            ...log,
+            logged_in: req.session.logged_in
+        });
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
