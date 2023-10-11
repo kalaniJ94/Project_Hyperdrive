@@ -50,7 +50,7 @@ body{
     }
 
 .dropbtn {
-    background-color: #04AA6D;
+    background-color: #00d200;;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -84,3 +84,10 @@ body{
     .dropdown:hover .dropdown-content {display: block; background-color: green;}
     
     .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+    #lightyears{
+        margin: 200px 300px 0px 300px;
+        text-align: center;
+        background: rgba(18, 19, 19, 0.7);
+        padding: 20px 0px 20px 0px;
+      }
