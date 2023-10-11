@@ -34,6 +34,14 @@ router.get('/', /*withAuth,*/ async (req, res) => {
                 },
             ],
         })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
 
         // Serialize creating an array of mission objects
         const missions = missionData.map((mission) => mission.get({ plain: true }));
@@ -42,6 +50,7 @@ router.get('/', /*withAuth,*/ async (req, res) => {
         res.render('homepage', {
             missions,
             habitablePlanets,
+            missionCount,
             logged_in: req.session.logged_in
         });
     } catch (error) {
@@ -80,12 +89,21 @@ router.get('/captainslog', async (req, res) => {
                 },
             ],
         })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
         
         // Serialize
         const log = logData.map((log) => log.get({ plain: true }));
         res.render('captainslog', {
             ...log,
             habitablePlanets,
+            missionCount,
             logged_in: req.session.logged_in
         });
     } catch (error) {
@@ -134,12 +152,21 @@ router.get('/destination', async (req, res) => {
                 },
             ],
         })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
 
-        Serialize
+        // Serialize
         const log = logData.map((log) => log.get({ plain: true }));
         res.render('captainslog', {
             ...log,
             habitablePlanets,
+            missionCount,
             logged_in: req.session.logged_in
         });
     } catch (error) {
