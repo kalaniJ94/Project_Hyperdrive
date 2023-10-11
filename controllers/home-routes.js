@@ -20,7 +20,7 @@ router.get('/', /*withAuth,*/ async (req, res) => {
             ]
         });
 
-        // Serialize creating ana rray of mission objects
+        // Serialize creating an array of mission objects
         const missions = missionData.map((mission) => mission.get({ plain: true }));
 
         // render
@@ -33,8 +33,48 @@ router.get('/', /*withAuth,*/ async (req, res) => {
     }
 })
 
-// captains log
-router.get('/captainslog/:id', async (req, res) => {
+// captains log --  TODO: scratch id, order ascending ID instead
+router.get('/captainslog', async (req, res) => {
+    try {
+        const logData = await Mission.findAll( {
+            include: [
+                {
+                    model: User
+                },
+                {
+                    model: Log,
+                    order: ['id', 'ASC']
+                },
+                {
+                    model: Planet
+                },
+            ]
+        });
+        
+        // Serialize
+        const log = logData.map((log) => log.get({ plain: true }));
+        res.render('captainslog', {
+            ...log,
+            logged_in: req.session.logged_in
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+})
+
+// hyperspace screen 
+router.get('/hyperspace', async (req, res) => {
+    try {
+        res.render('hyperspace')
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+})
+
+// destination
+router.get('/destination', async (req, res) => {
     try {
         const logData = await Mission.findAll( {
             include: [
@@ -51,7 +91,7 @@ router.get('/captainslog/:id', async (req, res) => {
             ]
         });
         
-        // const log = logData.get({ plain: true });
+        // Serialize
         const log = logData.map((log) => log.get({ plain: true }));
         res.render('captainslog', {
             ...log,
