@@ -34,7 +34,7 @@ router.get('/', withAuth, async (req, res) => {
 })
 
 // captains log --  TODO: scratch id, order ascending ID instead
-router.get('/captainslog', async (req, res) => {
+router.get('/captainslog/', async (req, res) => {
     try {
         const logData = await Mission.findAll( {
             include: [
@@ -43,7 +43,7 @@ router.get('/captainslog', async (req, res) => {
                 },
                 {
                     model: Log,
-                    attributes
+                    order: ['id', 'ASC']
                 },
                 {
                     model: Planet
