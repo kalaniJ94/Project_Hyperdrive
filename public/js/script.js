@@ -102,6 +102,7 @@ function randomSpaceEvent() {
 
         return event;
 }
+randomSpaceEvent();
 
 
 //listen for clicks on the dropdown
