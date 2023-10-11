@@ -80,7 +80,6 @@ console.log(habitability);
 };
 getData();
 
-
 //listen for clicks on the dropdown
 document.querySelector('.dropdown').addEventListener('click', function(event) {
     event.preventDefault();
@@ -90,3 +89,4 @@ document.querySelector('.dropdown').addEventListener('click', function(event) {
         document.body.style.backgroundImage = `url('${selectedPlanet.image}')`;
       }
     });
+
