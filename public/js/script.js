@@ -15,6 +15,8 @@ const data = require('../../seeds/planetData.json');
 var countdownDisplay = document.getElementById("countdown");
 var missionCount = document.getElementById("mission-count");
 
+const planetsData = require('../../seeds/planetData.json');
+
 
 //write Portal function here
 function displayPortal() {
@@ -79,3 +81,12 @@ console.log(habitability);
 getData();
 
 
+//listen for clicks on the dropdown
+document.querySelector('.dropdown').addEventListener('click', function(event) {
+    event.preventDefault();
+    const selectedPlanetName = event.target.getAttribute('data-planet-name');
+    const selectedPlanet = planetsData.find(planet => planet.name === selectedPlanetName);
+    if (selectedPlanet) {
+        document.body.style.backgroundImage = `url('${selectedPlanet.image}')`;
+      }
+    });
