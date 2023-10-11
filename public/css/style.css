@@ -24,6 +24,21 @@
     left: 50%;
 }
 
+.link-mission {
+  display: inline-block;
+  color: transparent;
+  font-size: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  top: 60%;
+  left: 40%;
+}
+
 #mission-count {
   position: fixed;
   top: 19.5%;
