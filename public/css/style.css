@@ -47,7 +47,17 @@ rotate: 20deg;
 display: flex;
 justify-content:space-between;
 margin: 20px;
+}
 
+.welcome{
+  background: rgba(18, 19, 19, 0.8);
+  padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+.intro {
+  border: #00d200 2px solid;
+  border-radius: 5px;
+  margin: 80px 300px 0px 300px;
 }
 
 .dropbtn {
@@ -87,3 +97,24 @@ display: block;
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
+.logs {
+  margin: 20px 300px 0px 300px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.login-logout {
+  background: rgba(18, 19, 19, 0.8);
+}
+
+.login-btn{
+  text-align: center;
+  background-color: #00d200;
+  margin: 20px 0px 0px 60px;
+}
+
+.signup-btn{
+  text-align: center;
+  background-color: #00d200;
+  margin: 20px 0px 0px 55px;
+}
