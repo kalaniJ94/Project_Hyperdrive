@@ -8,3 +8,18 @@
   h4{
     color: #00d200;
   }
+
+  .link-button {
+    display: inline-block;
+    color: transparent;
+    font-size: 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+}
