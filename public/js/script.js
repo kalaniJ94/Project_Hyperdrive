@@ -12,7 +12,9 @@ const { JSDOM } = jsdom;
 global.document = new JSDOM("index.html").window.document;
 
 const data = require('../../seeds/planetData.json');
-let countdownDisplay = document.getElementById("countdown");
+var countdownDisplay = document.getElementById("countdown");
+var missionCount = document.getElementById("mission-count");
+
 
 //write Portal function here
 function displayPortal() {
@@ -36,7 +38,7 @@ function timerCountdown(lightyears) {
     let count = Math.round(lightyears);
     const timer = setInterval(function () {
             if(countdownDisplay){
-                document.getElementById("countdownDisplay").textContent = count;
+                document.getElementById("countdownDisplay").innerHTML = count;
                }
             count--;
             
@@ -57,16 +59,22 @@ function timerCountdown(lightyears) {
 function habitablePlanet(isHabitable){
 console.log(isHabitable);
 
+let counter = 0;
+
+const planetSelector = document.getElementById("planetSelector");
+var counterElement = document.getElementById("mission-success");
+
 if(isHabitable){
     //missionSuccess will link to the counter on the dashboard 
-    // let habitability = document.getElementById("mission-success").value;
-    // habitability.textContent = missionSuccess;
-    missionSuccess++;
+    counter++;
+    console.log(counter);
+    counter = counterElement.innerHTML;
     
     console.log("Congrats! You have found a habitable planet!")
 } else {
     console.log("Keep looking!")
 }
+console.log(habitability);
 };
 getData();
 
