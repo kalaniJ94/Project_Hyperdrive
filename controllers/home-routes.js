@@ -36,21 +36,29 @@ router.get('/', /*withAuth,*/ async (req, res) => {
 // captains log
 router.get('/captainslog/:id', async (req, res) => {
     try {
-        const logData = await Log.findByPk(req.params.id, {
+        const logData = await Mission.findAll( {
             include: [
                 {
                     model: User
-                }
+                },
+                {
+                    model: Log,
+                    where: {id: req.params.id}
+                },
+                {
+                    model: Planet
+                },
             ]
         });
         
-        const log = logData.get({ plain: true });
-
+        // const log = logData.get({ plain: true });
+        const log = logData.map((log) => log.get({ plain: true }));
         res.render('captainslog', {
             ...log,
             logged_in: req.session.logged_in
         });
     } catch (error) {
+        console.log(error);
         res.status(500).json(error);
     }
 })
