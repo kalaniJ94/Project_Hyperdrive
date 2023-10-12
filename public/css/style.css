@@ -1,4 +1,4 @@
-*{
+* {
   background-image: url('../assets/images/cockpit_transparent.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -6,7 +6,7 @@
   color: white;
 }
 
-h4{
+h4 {
   color: #00d200;
 }
 
@@ -26,34 +26,42 @@ h4{
 }
 
 #mission-count {
-position: fixed;
-top: 19.5%;
-left: 7%;
-font-size: 20px;
-color: #00d200;
-rotate: 20deg;
+  position: fixed;
+  top: 16.5%;
+  left: 7%;
+  font-size: 19px;
+  color: #00d200;
+  rotate: 20deg;
 }
 
 #mission-success {
-position: fixed;
-top: 24.5%;
-left: 6.5%;
-font-size: 20px;
-color: #00d200;
-rotate: 20deg;
+  position: fixed;
+  top: 21%;
+  left: 6.3%;
+  font-size: 19px;
+  color: #00d200;
+  rotate: 20deg;
 }
 
-#header{
-display: flex;
-justify-content:space-between;
-margin: 20px;
+#header {
+  display: flex;
+  position: absolute;
+  justify-content: left;
+  margin-left: 20px;
 }
 
-.welcome{
+#dropdown {
+  display: flex;
+  justify-content: right;
+  margin: 20px;
+}
+
+.welcome {
   background: rgba(18, 19, 19, 0.8);
   padding: 20px 0px 10px 0px;
   text-align: center;
 }
+
 .intro {
   border: #00d200 2px solid;
   border-radius: 5px;
@@ -66,36 +74,43 @@ margin: 20px;
   padding: 16px;
   font-size: 16px;
   border: none;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
   position: relative;
   display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: rgba(213, 235, 237, 0.5);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
   color: black;
   background-color: rgba(213, 235, 237, 0.5);
   padding: 9px 16px;
   text-decoration: none;
   display: block;
   font-size: 15px;
-  }
-  
-  .dropdown-content a:hover {background-color: #5aa0e1;}
-  
-  .dropdown:hover .dropdown-content {display: block; background-color: rgb(141, 154, 197);}
-  
-  .dropdown:hover .dropbtn {background-color: #149018;}
+}
+
+.dropdown-content a:hover {
+  background-color: #5aa0e1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(141, 154, 197);
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #149018;
+}
 
 
 .logs {
@@ -104,7 +119,8 @@ margin: 20px;
   border-radius: 5px;
   background: rgba(18, 19, 19, 0.8);
 }
-#logs2{
+
+#logs2 {
   padding: 0px;
   margin: 0px;
 }
@@ -116,20 +132,54 @@ margin: 20px;
   width: 1200px;
 }
 
-.login-btn{
+.login-btn {
   text-align: center;
   background-color: #00d200;
   margin: 20px 0px 0px 60px;
 }
 
-.signup-btn{
+.signup-btn {
   text-align: center;
   background-color: #00d200;
   margin: 20px 0px 0px 55px;
 }
 
-#entry-page{
+#entry-page {
   background: rgba(18, 19, 19, 0.8);
   margin: auto;
 }
 
+.link-mission {
+  background:  rgba(18, 19, 19, 0.7);
+  font-size: 25px;
+  border: #00d200 solid 2px;
+  width: 18%;
+  padding: 10px;
+  margin-left: 41%;
+  margin-top: 14%;
+  position: absolute;
+  text-align: center;
+}
+.link-mission:hover {
+  transform: scale(1.05); 
+}
+#logout-icon{
+ position: fixed;
+ 
+}
+#log-page{
+  border: 2px green solid;
+  background:  rgba(18, 19, 19, 0.9);
+  width: 60vw;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  height: 70vh;
+  margin-top: 30px;
+  margin-left: 20%;
+}
+#captains-log{
+  text-align: center;
+ margin-top: 5%;
+  
+}
