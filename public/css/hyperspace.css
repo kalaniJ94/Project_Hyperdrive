@@ -26,6 +26,13 @@ body{
     left: 50%;
 }
 
+.link{
+    color: transparent;
+    position: fixed;
+    left: 60%;
+    top: 65%
+}
+
 #mission-count {
     position: fixed;
     top: 19.5%;
