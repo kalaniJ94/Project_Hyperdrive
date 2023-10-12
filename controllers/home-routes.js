@@ -115,6 +115,25 @@ router.get('/captainslog', async (req, res) => {
 // hyperspace screen 
 router.get('/hyperspace', async (req, res) => {
     try {
+        const missionData = await Mission.findOne({
+            where: {
+                id: 
+                [sequelize.literal(`SELECT MAX(id) FROM mission WHERE user_id = ${req.session.user_id}`)]
+                
+              },
+            include: [
+                {
+                    model: User,
+                    where: { id: req.session.user_id }
+                },
+                {
+                    model: Planet,
+                },
+                {
+                    model: Log,
+                }
+            ]
+        });
         const habitablePlanets = await Mission.count({
             include: [
                 {
@@ -137,8 +156,15 @@ router.get('/hyperspace', async (req, res) => {
                 },
             ],
         })
+        
+        const mission = missionData.get({ plain: true });
+        // console.log(...mission);
+        console.log(mission);
+
+
         res.render('hyperspace',
-        {   habitablePlanets,
+        {  mission,
+            habitablePlanets,
             missionCount,
             logged_in: req.session.logged_in
         })
