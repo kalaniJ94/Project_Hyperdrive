@@ -115,7 +115,33 @@ router.get('/captainslog', async (req, res) => {
 // hyperspace screen 
 router.get('/hyperspace', async (req, res) => {
     try {
-        res.render('hyperspace')
+        const habitablePlanets = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+                {
+                    model: Planet,
+                    where: {
+                        habitable: true
+                    }
+                },
+            ],
+        })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
+        res.render('hyperspace',
+        {   habitablePlanets,
+            missionCount,
+            logged_in: req.session.logged_in
+        })
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
