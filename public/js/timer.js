@@ -1,3 +1,4 @@
+
 function startTimer(duration, display) {
 var timer = duration, minutes, seconds;
 let i = 0;
@@ -13,12 +14,18 @@ var interval = setInterval(function () {
     if (--timer < 0) {
         timer = duration;
     }
+    if (i > 10) {
+        const portal = document.querySelector('#portalButton');
+        portal.className = "visible";
+    }
     if (i > duration) {
         clearInterval(interval);
         document.location.replace('/destination');
     }
+
 }, 1000);
 }
+
 
 window.onload = function () {
     const display = document.querySelector('#countdown');
