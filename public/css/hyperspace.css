@@ -87,7 +87,7 @@ body{
     .dropdown:hover .dropbtn {background-color: #149018;}
 
     #lightyears{
-        margin: 14% 30% 0% 30%;
+        margin: 17% 30% 0% 30%;
         text-align: center;
         background: rgba(18, 19, 19, 0.7);
         padding: 20px 0px 20px 0px;
@@ -97,3 +97,9 @@ body{
         padding: 20px 0px 0px 0px;
         font-size: 25px;
       }
+
+      #logout-icon{
+        position: fixed;
+        color: white;
+      }
+
