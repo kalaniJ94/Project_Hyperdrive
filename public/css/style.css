@@ -13,7 +13,7 @@ h4 {
 .link-button {
   display: inline-block;
   color: transparent;
-  font-size: 100px;
+  font-size: 80px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -21,13 +21,14 @@ h4 {
   text-decoration: none;
   cursor: pointer;
   position: fixed;
-  top: 30%;
-  left: 50%;
+  top: 25%;
+  left: 35%;
 }
 
 #mission-count {
   position: fixed;
-  top: 16.5%;
+  background-color: transparent;
+  top: 19.5%;
   left: 7%;
   font-size: 19px;
   color: #00d200;
@@ -36,7 +37,8 @@ h4 {
 
 #mission-success {
   position: fixed;
-  top: 21%;
+  background-color: transparent;
+  top: 24.5%;
   left: 6.3%;
   font-size: 19px;
   color: #00d200;
