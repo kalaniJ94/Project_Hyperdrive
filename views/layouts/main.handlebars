@@ -12,9 +12,11 @@
 
 <body>
     <header id="header">
+      {{#if logged_in}}
     <div>
-    <a href="/logout">Logout</a>{{!-- connect to logout.handlebar --}}
-</div>
+    <a href="#" class="logout-btn">Logout</a>
+    </div>
+      {{/if}}
   <div class="dropdown">
   <button class="dropbtn">Instant Planet Destination</button>
   <div class="dropdown-content">
@@ -40,7 +42,9 @@
         {{{body}}}
     </main>
     {{!-- add js script  --}}
-    <script src=""></script>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
