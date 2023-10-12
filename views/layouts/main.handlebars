@@ -12,35 +12,19 @@
 
 <body>
     <header id="header">
+      {{#if logged_in}}
     <div>
-    <a href="/logout">Logout</a>{{!-- connect to logout.handlebar --}}
-</div>
-  <div class="dropdown">
-  <button class="dropbtn">Instant Planet Destination</button>
-  <div class="dropdown-content">
-    <a href="#" planet-data-name="Gliese 173 b" >Gliese 176 b</a>
-    <a href="#" planet-data-name="CoRoT-2b" >CoRoT-2b</a>
-    <a href="#" planet-data-name="CoRoT-3b">CoRoT-3b</a>
-    <a href="#" planet-data-name="CoRoT-4b">CoRoT-4b</a>
-    <a href="#" planet-data-name="Beta Pictoris b">Beta Pictoris b</a>
-    <a href="#" planet-data-name="CT Chamaeleontis b">CT Chamaeleontis b</a>
-    <a href="#" planet-data-name="CoRoT-1b">CoRoT-1b</a>
-    <a href="#" planet-data-name="Rho Coronae Borealis b">Rho Coronae Borealis b</a>
-    <a href="#" planet-data-name="55 Cancri e">55 Cancri e</a>
-    <a href="#" planet-data-name="55 Cancri b">55 Cancri b</a>
-    <a href="#" planet-data-name="2MASS J2126-8140">2MASS J2126-8140</a>
-    <a href="#" planet-data-name="2MASS J21402931+1625183 b">2MASS J21402931+1625183 b</a>
-    <a href="#" planet-data-name="TYC 3667-1280-1 b">TYC 3667-1280-1 b</a>
-    <a href="#" planet-data-name="TYC 8998-760-1 c">TYC 8998-760-1 c</a>
-    <a href="#" planet-data-name="V1298 Tauri b">V1298 Tauri b</a>
-  </div>
-</div>
+    <a id="logout-icon" href="#" class="logout-btn">Logout</a>
+    </div>
+      {{/if}}
 </header>
     <main>
         {{{body}}}
     </main>
     {{!-- add js script  --}}
-    <script src=""></script>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>

@@ -115,7 +115,59 @@ router.get('/captainslog', async (req, res) => {
 // hyperspace screen 
 router.get('/hyperspace', async (req, res) => {
     try {
-        res.render('hyperspace')
+        const missionData = await Mission.findOne({
+            where: {
+                id: 
+                [sequelize.literal(`SELECT MAX(id) FROM mission WHERE user_id = ${req.session.user_id}`)]
+                
+              },
+            include: [
+                {
+                    model: User,
+                    where: { id: req.session.user_id }
+                },
+                {
+                    model: Planet,
+                },
+                {
+                    model: Log,
+                }
+            ]
+        });
+        const habitablePlanets = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+                {
+                    model: Planet,
+                    where: {
+                        habitable: true
+                    }
+                },
+            ],
+        })
+        const missionCount = await Mission.count({
+            include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+            ],
+        })
+        
+        const mission = missionData.get({ plain: true });
+        // console.log(...mission);
+        console.log(mission);
+
+
+        res.render('hyperspace',
+        {  mission,
+            habitablePlanets,
+            missionCount,
+            logged_in: req.session.logged_in
+        })
     } catch (error) {
         console.log(error);
         res.status(500).json(error);
