@@ -5,7 +5,7 @@ const {withAuth} = require('../../utils/auth')
 //api/missions
 
 //Create new mission
-router.post('/', /*withAuth,*/ async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
     try {
         const missionData = await Mission.create({
             user_id: req.session.user_id,
