@@ -37,32 +37,29 @@
     <h2>Captains Log</h2>
 </section>
 <main id="log-page">
-{{#if planets.length}} {{!-- change to name of table --}}
 <section>
     <h3>Previous Visited Planets</h3>
 
-    {{#each planets as |planet|}} 
     <div class="row mb-2">
         <div class="col-md-8">
             <h4><a href="/planet/{{planet.id}}">{{planet.name}}</a></h4> 
             <ul>
                 <li>{{{randomSpaceEvent}}}</li>
-                <li>{{planet.createdAt}}</li>
-                <li>{{planet.habitability}}</li>
-                <li>{{planet.Terrain}}</li>
+                <li>{{mission.planet.createdAt}}</li>
+                <li>{{mission.planet.habitability}}</li>
+                <li>{{mission.planet.Terrain}}</li>
             </ul>
             <br>
             <h5>Notes</h5>
-            <form action="/"></form> {{!-- enter in what file we want to send/save the comments in --}}
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <form class="" action="/"> {{!-- enter in what file we want to send/save the comments in --}}
+            <label>Enter Captains Log Notes</label>
+            <textarea name="missionNotes" id="missionNotes" class="{{mission.id}}" cols="30" rows="10"></textarea>
             <br>
-            <button type="submit">save</button>
+            <button type="submit">Save</button>
             </form>
         </div>
     </div>
-    {{/each}}
     </div>
-    {{/if}}
 </section>
 
 <section>
