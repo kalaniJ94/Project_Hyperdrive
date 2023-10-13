@@ -40,7 +40,8 @@ main {
 .link{
     color: transparent;
     position: fixed;
-    left: 60%;
+    font-size: 40px;
+    left: 55%;
     top: 65%
 }
 
@@ -54,6 +55,7 @@ main {
 }
 
 #mission-success {
+    
     position: fixed;
     top: 24.5%;
     left: 6.5%;
@@ -105,10 +107,12 @@ main {
     .dropdown:hover .dropbtn {background-color: #149018;}
 
     #lightyears{
-        margin: 17% 30% 0% 30%;
+        margin: 19% 30% 0% 30%;
         text-align: center;
         background: rgba(18, 19, 19, 0.7);
         padding: 20px 0px 20px 0px;
+        border: solid 2px #00d200;
+        color: white;
       }
 
       #countdown1{
