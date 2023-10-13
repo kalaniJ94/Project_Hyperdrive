@@ -20,6 +20,11 @@ module.exports = {
             var event = eventArray[Math.floor(Math.random()*eventArray.length)];
     
             return event;
+    },
+
+    logCheck: (comment) => {
+        return comment ? true
+        : false;
     }
 }
 
