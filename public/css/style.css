@@ -1,3 +1,8 @@
+*{
+font-family: 'Pixelify Sans', sans-serif;
+color: #00d200;
+}
+
 body {
   background-image: url('../assets/images/cockpit_transparent.png');
   background-repeat: no-repeat;
