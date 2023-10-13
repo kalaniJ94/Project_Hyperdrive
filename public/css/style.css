@@ -1,21 +1,20 @@
-*{
-font-family: 'Pixelify Sans', sans-serif;
-color: #00d200;
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #00d200;
 }
 
 body {
-  background-image: url('../assets/images/cockpit_transparent.png');
+  background-image: url("../assets/images/cockpit_transparent.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* color: #00d200; */
   margin: 0;
-    padding: 0;
+  padding: 0;
 }
-h1{
+h1 {
   color: #00d200;
 }
-h2{
+h2 {
   color: #00d200;
 }
 h4 {
@@ -25,20 +24,19 @@ h4 {
 .intro-header {
   border: #00d200 2px solid;
   width: 80vw;
-  margin: 3% auto; /* Added auto to horizontally center the element */
-  display: flex; /* Added */
-  justify-content: center; /* Added */
-  align-items: center; /* Added */
-  text-align: center; /* Ensures text within is centered */
+  margin: 3% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .header-block {
-  width: 100%; /* Added */
- 
+  width: 100%;
 }
 
 .welcome {
-  margin: 0;  
+  margin: 0;
 }
 
 .link-button {
@@ -146,14 +144,12 @@ h4 {
   background-color: #149018;
 }
 
-
 .logs {
   width: 40%;
   margin: 100px auto 60px auto;
   border-width: 2px;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.6);
-  
 }
 
 #logs2 {
@@ -166,7 +162,7 @@ h4 {
 }
 
 .link-mission {
-  background:  transparent;
+  background: transparent;
   color: transparent;
   width: 18%;
   padding: 20px;
@@ -176,15 +172,14 @@ h4 {
   text-align: center;
 }
 .link-mission:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
-#logout-icon{
- position: fixed;
- 
+#logout-icon {
+  position: fixed;
 }
-#log-page{
+#log-page {
   border: 2px green solid;
-  background:  rgba(18, 19, 19, 0.9);
+  background: rgba(18, 19, 19, 0.9);
   width: 60vw;
   margin: auto;
   position: absolute;
@@ -193,15 +188,14 @@ h4 {
   margin-top: 30px;
   margin-left: 20%;
 }
-#captains-log{
+#captains-log {
   text-align: center;
- margin-top: 1%;
-  
+  margin-top: 1%;
 }
 
 /* Log in accordion function */
 
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,7 +203,7 @@ h4 {
   padding: 2%;
 }
 
-.border{
+.border {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,14 +212,12 @@ h4 {
 }
 
 .accordion-btn {
-  
   align-items: center;
   justify-content: center;
 }
 
 .icon {
   display: inline-block;
- 
 }
 
 .flex-container,
@@ -251,23 +243,23 @@ h4 {
 .input-field {
   color: #1f221f;
   background-color: #bff8bf;
-  border: 2px solid #00d200; 
-  border-radius: 4px; 
+  border: 2px solid #00d200;
+  border-radius: 4px;
   margin: 2px;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .input-field::placeholder {
-  color: #555555; 
+  color: #555555;
 }
 
 .input-field:focus {
   outline: none;
-  border-color: #44dd44; 
+  border-color: #44dd44;
 }
 
 .home {
-margin-top: -2.5%;
-margin-left: 160px;
-justify-content: center;
+  margin-top: -2.5%;
+  margin-left: 160px;
+  justify-content: center;
 }
