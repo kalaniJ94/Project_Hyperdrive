@@ -176,6 +176,8 @@ h4 {
 }
 #logout-icon {
   position: fixed;
+  margin-top: 2%;
+  margin-left: 3%;
 }
 #log-page {
   border: 2px green solid;
@@ -245,8 +247,6 @@ h4 {
   background-color: #bff8bf;
   border: 2px solid #00d200;
   border-radius: 4px;
-  margin: 2px;
-  padding: 10px;
 }
 
 .input-field::placeholder {
@@ -259,7 +259,7 @@ h4 {
 }
 
 .home {
-  margin-top: -2.5%;
-  margin-left: 160px;
+  margin-top: 2%;
+  margin-left: 10%;
   justify-content: center;
 }
