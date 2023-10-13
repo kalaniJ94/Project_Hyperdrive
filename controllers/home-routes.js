@@ -4,7 +4,7 @@ const { User, Mission, Planet, Log } = require('../models');
 const withAuth = require('./../utils/auth');
 
 // GET homepage data for the user
-router.get('/', /*withAuth,*/ async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const missionData = await Mission.findAll({
             include: [
