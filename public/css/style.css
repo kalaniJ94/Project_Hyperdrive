@@ -85,7 +85,7 @@ h4 {
 
 #dropdown {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   margin: 20px;
 }
 
@@ -148,7 +148,7 @@ h4 {
 
 .logs {
   width: 40%;
-  margin: 100px auto 0px auto;
+  margin: 100px auto 60px auto;
   border-width: 2px;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.6);
@@ -263,4 +263,9 @@ h4 {
 .input-field:focus {
   outline: none;
   border-color: #44dd44; 
+}
+
+.home {
+margin-top: -2.5%;
+margin-left: 160px;
 }
