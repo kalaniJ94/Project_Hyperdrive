@@ -9,6 +9,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   /* color: #00d200; */
+  margin: 0;
+    padding: 0;
 }
 h1{
   color: #00d200;
@@ -18,6 +20,25 @@ h2{
 }
 h4 {
   color: #00d200;
+}
+
+.intro-header {
+  border: #00d200 2px solid;
+  width: 80vw;
+  margin: 5% auto; /* Added auto to horizontally center the element */
+  display: flex; /* Added */
+  justify-content: center; /* Added */
+  align-items: center; /* Added */
+  text-align: center; /* Ensures text within is centered */
+}
+
+.header-block {
+  width: 100%; /* Added */
+ 
+}
+
+.welcome {
+  margin: 0;  
 }
 
 .link-button {
@@ -126,10 +147,12 @@ h4 {
 
 
 .logs {
-  margin: 20px 300px 0px 300px;
+  width: 40%;
+  margin: 100px auto 0px auto;
   border-width: 2px;
   border-radius: 5px;
-  background: rgba(18, 19, 19, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+  
 }
 
 #logs2 {
@@ -138,27 +161,7 @@ h4 {
 }
 
 #login-signup {
-  margin: 0px 0px 0px 20px;
-  background: rgba(18, 19, 19, 0.5);
   text-align: center;
-  width: 1200px;
-}
-
-.login-btn {
-  text-align: center;
-  background-color: #00d200;
-  margin: 20px 0px 0px 60px;
-}
-
-.signup-btn {
-  text-align: center;
-  background-color: #00d200;
-  margin: 20px 0px 0px 55px;
-}
-
-#entry-page {
-  background: rgba(18, 19, 19, 0.8);
-  margin: auto;
 }
 
 .link-mission {
@@ -195,6 +198,69 @@ h4 {
   
 }
 
-button{
-  background-color: none;
+/* Log in accordion function */
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.border{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.accordion-btn {
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  display: inline-block;
+ 
+}
+
+.flex-container,
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form {
+  text-align: center;
+}
+
+.input-group,
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-field {
+  color: #1f221f;
+  background-color: #bff8bf;
+  border: 2px solid #00d200; 
+  border-radius: 4px; 
+  margin: 2px;
+  padding: 10px; 
+}
+
+.input-field::placeholder {
+  color: #555555; 
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #44dd44; 
 }
