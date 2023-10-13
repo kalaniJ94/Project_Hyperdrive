@@ -1,5 +1,6 @@
 // helper functions
 module.exports = {
+    // creates a random space event
     randomSpaceEvent: () => {
         const eventArray = [
             'ALERT: Geomagnetic Storm Nearby, Avoid the Radiation', 
@@ -22,6 +23,7 @@ module.exports = {
             return event;
     },
 
+    // checks to see if a comment was logged for the mission
     logCheck: (comment) => {
         return comment ? true
         : false;
