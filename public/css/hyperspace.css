@@ -1,15 +1,26 @@
-*{
-    color: #00d200;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('../assets/hyperspace_gif.gif');
+    background-color: #00d200; /* Use a background color as a fallback */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-body{
-    background-image: url('../assets/images/transparentHYPER.png'), url('../assets/hyperspace\ gif.gif') ;
-    background-repeat: repeat;
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/transparentHYPER.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
 }
+
 
 .link-button {
     display: inline-block;
