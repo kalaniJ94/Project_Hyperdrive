@@ -4,7 +4,7 @@ const { User, Mission, Planet, Log } = require('../models');
 const withAuth = require('./../utils/auth');
 
 // GET homepage data for the user
-router.get('/', /*withAuth,*/ async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const missionData = await Mission.findAll({
             include: [
@@ -59,7 +59,7 @@ router.get('/', /*withAuth,*/ async (req, res) => {
 })
 
 // captains log
-router.get('/captainslog', async (req, res) => {
+router.get('/captainslog', withAuth, async (req, res) => {
     try {
         const newMisssion = await Mission.findOne( {
             where: {
@@ -107,7 +107,7 @@ router.get('/captainslog', async (req, res) => {
 })
 
 // hyperspace screen 
-router.get('/hyperspace', async (req, res) => {
+router.get('/hyperspace', withAuth, async (req, res) => {
     try {
         const missionData = await Mission.findOne({
             where: {
