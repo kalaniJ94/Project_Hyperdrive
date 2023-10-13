@@ -139,25 +139,24 @@ h4 {
 
 #login-signup {
   margin: 0px 0px 0px 20px;
-  background: rgba(18, 19, 19, 0.5);
   text-align: center;
   width: 1200px;
 }
 
 .login-btn {
   text-align: center;
-  background-color: #00d200;
-  margin: 20px 0px 0px 60px;
+  border: #00d200 solid 1px;
+  margin: 20px 0px 0px 70px;
 }
 
 .signup-btn {
   text-align: center;
-  background-color: #00d200;
-  margin: 20px 0px 0px 55px;
+  border: #00d200 solid 1px;
+  margin: 20px 0px 0px 67px;
 }
 
+
 #entry-page {
-  background: rgba(18, 19, 19, 0.8);
   margin: auto;
 }
 
