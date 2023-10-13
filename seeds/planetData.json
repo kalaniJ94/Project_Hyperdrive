@@ -10,7 +10,7 @@
   "host_star_temperature": 3679.0,
   "Terrain": "Rocky and dry. You'll probably die.",
   "habitable": true,
-  "image": "../public/assets/images/planet1.jpg"
+  "image": "../assets/images/planet1.jpg"
   
 },
 {
@@ -25,7 +25,7 @@
   "host_star_temperature": 5625.0,
   "Terrain": "Humid and hot. You'll most definitely die.",
   "habitable": false,
-  "image": "../public/assets/images/planet2.jpg"
+  "image": "../assets/images/planet2.jpg"
 },
 {
   "name": "CoRoT-3b",
@@ -39,7 +39,7 @@
   "host_star_temperature": 6740.0,
   "Terrain": "Dry. You'll for sure die.",
   "habitable": false,
-  "image": "../public/assets/images/planet3.jpg"
+  "image": "../assets/images/planet3.jpg"
 
 },
 {
@@ -54,7 +54,7 @@
   "host_star_temperature": 6190.0,
   "Terrain": "Dry. You'll for sure die.",
   "habitable": false,
-  "image": "../public/assets/images/planet4.jpg"
+  "image": "../assets/images/planet4.jpg"
 },
 {
   "name": "Beta Pictoris b",
@@ -68,7 +68,7 @@
   "host_star_temperature": 7099.0,
   "Terrain": "Dry. You'll for sure die.",
   "habitable": false,
-  "image": "../public/assets/images/planet5.jpg"
+  "image": "../assets/images/planet5.jpg"
 
 },
 {
@@ -83,7 +83,7 @@
   "host_star_temperature": 4200.0,
   "Terrain": "Too hot to care.",
   "habitable": true,
-  "image": "../public/assets/images/planet6.jpg"
+  "image": "../assets/images/planet6.jpg"
 
 },
 {
@@ -98,7 +98,7 @@
   "host_star_temperature": 5950.0,
   "Terrain": "So many craters. On the bright side, you'll probably die.",
   "habitable": false,
-  "image": "../public/assets/images/planet7.jpg"
+  "image": "../assets/images/planet7.jpg"
 
 },
 {
@@ -113,7 +113,7 @@
   "host_star_temperature": 5627.0,
   "Terrain": "Mildly hot, with a spacesuit you'll probably still die.",
   "habitable": false,
-  "image": "../public/assets/images/planet8.jpg"
+  "image": "../assets/images/planet8.jpg"
 
 },
 {
@@ -128,7 +128,7 @@
   "host_star_temperature": 5196.0,
   "Terrain": "Has fish, but you'll probably die.",
   "habitable": false,
-  "image": "../public/assets/images/planet9.jpg"
+  "image": "../assets/images/planet9.jpg"
 
 },
 {
@@ -143,7 +143,7 @@
   "host_star_temperature": 5196.0,
   "Terrain": "Tropical and safe. Woo!",
   "habitable": true,
-  "image": "../public/assets/images/planet10.jpg"
+  "image": "../assets/images/planet10.jpg"
 
 },
 {
@@ -158,7 +158,7 @@
   "host_star_temperature": 3490.0,
   "Terrain": "Lots of beautiful oceans and crabs that eat feet. You'll survive, but you won't have feet.",
   "habitable": true,
-  "image": "../public/assets/images/planet11.jpg"
+  "image": "../assets/images/planet11.jpg"
 },
 {
   "name": "2MASS J21402931+1625183 b",
@@ -172,7 +172,7 @@
   "host_star_temperature": 2300.0,
   "Terrain": "You'll incinerate. But you'll die happy because its beautiful.",
   "habitable": false,
-  "image": "../public/assets/images/planet12.jpg"
+  "image": "../assets/images/planet12.jpg"
 },
 {
   "name": "TYC 3667-1280-1 b",
@@ -186,7 +186,7 @@
   "host_star_temperature": 5130.0,
   "Terrain": "Hot.",
   "habitable": true,
-  "image": "../public/assets/images/planet13.jpg"
+  "image": "../assets/images/planet13.jpg"
 },
 {
   "name": "TYC 8998-760-1 c",
@@ -200,7 +200,7 @@
   "host_star_temperature": 4783.0,
   "Terrain": "A rock climbing mecca.",
   "habitable": true,
-  "image": "../public/assets/images/planet14.jpg"
+  "image": "../assets/images/planet14.jpg"
 },
 {
   "name": "V1298 Tauri b",
@@ -214,6 +214,6 @@
   "host_star_temperature": 4970.0,
   "Terrain": "Atmosphere causes nonstop dance moves.",
   "habitable": true,
-  "image": "../public/assets/images/planet15.jpg"
+  "image": "../assets/images/planet15.jpg"
 }
 ]
