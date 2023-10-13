@@ -39,7 +39,7 @@
 </section>
 <main id="log-page">
 <section>
-    <h3>Previous Visited Planets</h3>
+    <h3 id="visited-planets">Previous Visited Planets</h3>
 
     <div class="row mb-2">
         <div class="col-md-8">
@@ -56,7 +56,7 @@
             <p><span id = "comment">{{mission.log.comment}}</span></p>
           {{else}}
             <form action="/"></form> {{!-- enter in what file we want to send/save the comments in --}}
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="notes" cols="40" rows="5"></textarea>
             <br>
             <button type="submit">Save</button>
             </form>
