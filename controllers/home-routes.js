@@ -174,59 +174,6 @@ router.get('/hyperspace', async (req, res) => {
     }
 })
 
-// destination
-router.get('/destination', async (req, res) => {
-    try {
-        const logData = await Mission.findAll( {
-            include: [
-                {
-                    model: User
-                },
-                {
-                    model: Log,
-                },
-                {
-                    model: Planet
-                },
-            ]
-        });
-        const habitablePlanets = await Mission.count({
-            include: [
-                {
-                    model: User,
-                    where: {id: req.session.user_id}
-                },
-                {
-                    model: Planet,
-                    where: {
-                        habitable: true
-                    }
-                },
-            ],
-        })
-        const missionCount = await Mission.count({
-            include: [
-                {
-                    model: User,
-                    where: {id: req.session.user_id}
-                },
-            ],
-        })
-
-        // Serialize
-        const log = logData.map((log) => log.get({ plain: true }));
-        res.render('captainslog', {
-            ...log,
-            habitablePlanets,
-            missionCount,
-            logged_in: req.session.logged_in
-        });
-    } catch (error) {
-        console.log(error);
-        res.status(500).json(error);
-    }
-})
-
 // redirect to homepage if the user is already logged in
 router.get('/login', (req, res) => {
     // if the user is already logged in redirect

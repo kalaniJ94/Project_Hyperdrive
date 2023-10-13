@@ -20,7 +20,7 @@ var interval = setInterval(function () {
     }
     if (i > duration) {
         clearInterval(interval);
-        document.location.replace('/destination');
+        document.location.replace('/captainslog');
     }
 
 }, 1000);
