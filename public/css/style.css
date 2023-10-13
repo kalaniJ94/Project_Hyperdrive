@@ -3,9 +3,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: white;
+  /* color: #00d200; */
 }
-
+h1{
+  color: #00d200;
+}
+h2{
+  color: #00d200;
+}
 h4 {
   color: #00d200;
 }
@@ -183,4 +188,8 @@ h4 {
   text-align: center;
  margin-top: 5%;
   
+}
+
+button{
+  background-color: none;
 }

@@ -67,6 +67,15 @@ router.get('/captainslog', withAuth, async (req, res) => {
                 [sequelize.literal(`SELECT MAX(id) FROM mission WHERE user_id = ${req.session.user_id}`)]
                 
               },
+              include: [
+                {
+                    model: User,
+                    where: {id: req.session.user_id}
+                },
+                {
+                    model: Planet
+                },
+              ]
         });
         const habitablePlanets = await Mission.count({
             include: [
@@ -93,6 +102,7 @@ router.get('/captainslog', withAuth, async (req, res) => {
         
         // Serialize
         const mission = newMisssion.get({ plain: true });
+        console.log(mission);
         res.render('captainslog', {
             // ...log,
             mission,

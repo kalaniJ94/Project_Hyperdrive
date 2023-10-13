@@ -83,13 +83,5 @@ console.log(habitability);
 };
 getData();
 
-//listen for clicks on the dropdown
-document.querySelector('.dropdown').addEventListener('click', function(event) {
-    event.preventDefault();
-    const selectedPlanetName = event.target.getAttribute('data-planet-name');
-    const selectedPlanet = planetsData.find(planet => planet.name === selectedPlanetName);
-    if (selectedPlanet) {
-        document.body.style.backgroundImage = `url('${selectedPlanet.image}')`;
-      }
-    });
+
 

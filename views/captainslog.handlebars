@@ -33,7 +33,7 @@
 </div>
 </header>
 
-<section id="captains-log">
+<section id="captains-log" class="{{mission.planet.image}}">
     <h2>Captains Log</h2>
 </section>
 <main id="log-page">
@@ -47,10 +47,9 @@
             <h4><a href="/planet/{{planet.id}}">{{planet.name}}</a></h4> 
             <ul>
                 <li>{{{randomSpaceEvent}}}</li>
-                <li>{{planet.date}}</li>
-                <li>{{planet.missionSuccess}}</li>
+                <li>{{planet.createdAt}}</li>
                 <li>{{planet.habitability}}</li>
-                <li>{{planet.terrain}}</li>
+                <li>{{planet.Terrain}}</li>
             </ul>
             <br>
             <h5>Notes</h5>
@@ -79,5 +78,5 @@
 </body>
 
 {{!-- enter in script --}}
-<script src=""></script>
+<script src="/js/newBackground.js"></script>
 
