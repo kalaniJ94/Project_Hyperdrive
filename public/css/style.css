@@ -152,13 +152,12 @@ h4 {
 }
 
 .link-mission {
-  background:  rgba(18, 19, 19, 0.7);
-  font-size: 25px;
-  border: #00d200 solid 2px;
+  background:  transparent;
+  color: transparent;
   width: 18%;
-  padding: 10px;
+  padding: 20px;
   margin-left: 41%;
-  margin-top: 14%;
+  margin-top: 25%;
   position: absolute;
   text-align: center;
 }
