@@ -5,7 +5,7 @@ const {withAuth} = require('../../utils/auth')
 //api/logs
 
 //Create new log post for a Mission
-router.post('/', withAuth, async (req, res) => {
+router.post('/',  async (req, res) => {
     try {
         const logData = await Log.create({
             mission_id: req.body.mission_id,
