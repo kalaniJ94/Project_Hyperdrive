@@ -92,10 +92,10 @@ router.get('/captainslog', withAuth, async (req, res) => {
         })
         
         // Serialize
-        // const log = logData.map((log) => log.get({ plain: true }));
+        const mission = newMisssion.get({ plain: true });
         res.render('captainslog', {
             // ...log,
-            newMisssion,
+            mission,
             habitablePlanets,
             missionCount,
             logged_in: req.session.logged_in
