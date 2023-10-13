@@ -13,7 +13,7 @@ Mission.belongsTo(User, {
 Mission.belongsTo(Planet, {
     foreignKey: 'planet_id'
 })
-Mission.hasMany(Log, {
+Mission.hasOne(Log, {
     foreignKey: 'mission_id',
     onDelete: 'CASCADE'
 })
