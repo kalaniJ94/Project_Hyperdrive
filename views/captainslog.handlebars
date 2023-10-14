@@ -52,11 +52,15 @@
             </ul>
             <br>
             <h5>Notes</h5>
+          {{#if mission.log.comment}}
+            <p><span id = "comment">{{mission.log.comment}}</span></p>
+          {{else}}
             <form action="/"></form> {{!-- enter in what file we want to send/save the comments in --}}
             <textarea name="" id="notes" cols="40" rows="5"></textarea>
             <br>
-            <button type="submit">save</button>
+            <button type="submit">Save</button>
             </form>
+          {{/if}}
         </div>
     </div>
     </div>

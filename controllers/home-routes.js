@@ -75,6 +75,9 @@ router.get('/captainslog', withAuth, async (req, res) => {
                 {
                     model: Planet
                 },
+                {
+                    model: Log
+                },
               ]
         });
         const habitablePlanets = await Mission.count({
