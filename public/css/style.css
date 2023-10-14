@@ -1,18 +1,42 @@
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #00d200;
+}
+
 body {
-  background-image: url('../assets/images/cockpit_transparent.png');
+  background-image: url("../assets/images/cockpit_transparent.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* color: #00d200; */
+  margin: 0;
+  padding: 0;
 }
-h1{
+h1 {
   color: #00d200;
 }
-h2{
+h2 {
   color: #00d200;
 }
 h4 {
   color: #00d200;
+}
+
+.intro-header {
+  border: #00d200 2px solid;
+  width: 80vw;
+  margin: 3% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-block {
+  width: 100%;
+}
+
+.welcome {
+  margin: 0;
 }
 
 .link-button {
@@ -59,7 +83,7 @@ h4 {
 
 #dropdown {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   margin: 20px;
 }
 
@@ -76,11 +100,12 @@ h4 {
 }
 
 .dropbtn {
-  background-color: #00d200;
+  background-color: rgba(0, 210, 0, 0.7); /* Adjust 0.7 as needed */
   color: white;
   padding: 16px;
   font-size: 16px;
-  border: none;
+  border-radius: 2%;
+  border: black 2px black;
 }
 
 .dropdown {
@@ -119,12 +144,12 @@ h4 {
   background-color: #149018;
 }
 
-
 .logs {
-  margin: 20px 300px 0px 300px;
+  width: 40%;
+  margin: 100px auto 60px auto;
   border-width: 2px;
   border-radius: 5px;
-  background: rgba(18, 19, 19, 0.8);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #logs2 {
@@ -133,31 +158,11 @@ h4 {
 }
 
 #login-signup {
-  margin: 0px 0px 0px 20px;
-  background: rgba(18, 19, 19, 0.5);
   text-align: center;
-  width: 1200px;
-}
-
-.login-btn {
-  text-align: center;
-  background-color: #00d200;
-  margin: 20px 0px 0px 60px;
-}
-
-.signup-btn {
-  text-align: center;
-  background-color: #00d200;
-  margin: 20px 0px 0px 55px;
-}
-
-#entry-page {
-  background: rgba(18, 19, 19, 0.8);
-  margin: auto;
 }
 
 .link-mission {
-  background:  transparent;
+  background: transparent;
   color: transparent;
   width: 18%;
   padding: 20px;
@@ -167,15 +172,16 @@ h4 {
   text-align: center;
 }
 .link-mission:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
-#logout-icon{
- position: fixed;
- 
+#logout-icon {
+  position: fixed;
+  margin-top: 2%;
+  margin-left: 3%;
 }
-#log-page{
+#log-page {
   border: 2px green solid;
-  background:  rgba(18, 19, 19, 0.9);
+  background: rgba(18, 19, 19, 0.9);
   width: 60vw;
   margin: auto;
   position: absolute;
@@ -183,13 +189,86 @@ h4 {
   height: 70vh;
   margin-top: 30px;
   margin-left: 20%;
-}
-#captains-log{
-  text-align: center;
- margin-top: 5%;
-  
+  margin-bottom: 30px;
 }
 
-button{
-  background-color: none;
+
+#visited-planets{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration:underline;
+  text-underline-offset: 3px;
+}
+#captains-log {
+  text-align: center;
+  margin-top: 1%;
+}
+
+/* Log in accordion function */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.accordion-btn {
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.flex-container,
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form {
+  text-align: center;
+}
+
+.input-group,
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-field {
+  color: #1f221f;
+  background-color: #bff8bf;
+  border: 2px solid #00d200;
+  border-radius: 4px;
+}
+
+.input-field::placeholder {
+  color: #555555;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #44dd44;
+}
+
+.home {
+  margin-top: 2%;
+  margin-left: 10%;
+  justify-content: center;
 }
