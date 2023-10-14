@@ -22,9 +22,5 @@ module.exports = {
             return event;
     },
 
-    logCheck: (comment) => {
-        return comment ? true
-        : false;
-    }
 }
 
