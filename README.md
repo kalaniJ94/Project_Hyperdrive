@@ -2,7 +2,7 @@
 
 ## User Story
 1. As a user, I want to use an educational tool to learn more about exoplanets outside of our solar system. 
-2  As a user, I want to be able to store and revisit data I have learned about those exoplanets. 
+2  As a user, I want to be able to store and comment on the data I have learned about those exoplanets. 
 ## Acceptance Criteria
 - GIVEN a webpage with explorable planet data. 
 - WHEN I load up the page for the first time, I am greeted with a login page to sign into an account, or     sign-up.
