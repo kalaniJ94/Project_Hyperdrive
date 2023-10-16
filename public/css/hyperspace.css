@@ -123,8 +123,5 @@ main {
         font-size: 25px;
       }
 
-      #logout-icon{
-        position: absolute;
-        z-index: 999;
-      }
+
 
