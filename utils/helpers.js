@@ -23,10 +23,13 @@ module.exports = {
             return event;
     },
 
+<<<<<<< HEAD
     // checks to see if a comment was logged for the mission
     logCheck: (comment) => {
         return comment ? true
         : false;
     }
+=======
+>>>>>>> 5f154d2b1658077ad3125819c09eb0a974949697
 }
 

@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run tailwind:css && node server.js",
+    "postinstall": "npm run tailwind:css",
+    "start": "node server.js",
     "seed": "node seeds/index.js",
     "tailwind:css": "postcss public/css/output.css -o public/css/output.css",
     "function": "npm run public/js/script.js"
@@ -34,5 +35,8 @@
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
+  },
+  "engine": {
+    "node": "18.16.1"
   }
 }
