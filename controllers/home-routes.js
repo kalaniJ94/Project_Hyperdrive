@@ -105,16 +105,14 @@ router.get('/captainslog', withAuth, async (req, res) => {
         
         // Serialize
         const mission = newMisssion.get({ plain: true });
-        console.log(mission);
+
         res.render('captainslog', {
-            // ...log,
             mission,
             habitablePlanets,
             missionCount,
             logged_in: req.session.logged_in
         });
     } catch (error) {
-        console.log(error);
         res.status(500).json(error);
     }
 })
@@ -165,9 +163,6 @@ router.get('/hyperspace', withAuth, async (req, res) => {
         })
         
         const mission = missionData.get({ plain: true });
-        // console.log(...mission);
-        console.log(mission);
-
 
         res.render('hyperspace',
         {  mission,
@@ -176,7 +171,6 @@ router.get('/hyperspace', withAuth, async (req, res) => {
             logged_in: req.session.logged_in
         })
     } catch (error) {
-        console.log(error);
         res.status(500).json(error);
     }
 })

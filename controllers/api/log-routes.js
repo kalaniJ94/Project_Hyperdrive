@@ -3,7 +3,7 @@ const { Log } = require('../../models');
 const {withAuth} = require('../../utils/auth')
 
 //api/logs
-//api/logs/1
+
 //Create new log post for a Mission
 router.post('/',  async (req, res) => {
     try {
