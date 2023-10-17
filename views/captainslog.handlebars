@@ -50,13 +50,15 @@
                 <li>Planet Temperature: {{mission.planet.temperature}}°F</li>
                 <li>{{mission.planet.habitability}}</li>
                 <li>{{mission.planet.Terrain}}</li>
+                <li>{{mission.log.comment}}</li>
             </ul>
             <br>
             <h5>Notes</h5>
           {{#if mission.log.comment}}
             <p><span id = "comment">{{mission.log.comment}}</span></p>
           {{else}}
-            <form action="/"></form> {{!-- enter in what file we want to send/save the comments in --}}
+            <form id="log-form" > {{!-- enter in what file we want to send/save the comments in --}}
+            <input type="hidden" id="mission-id" value="{{mission.id}}"/>
             <textarea name="" id="notes" cols="40" rows="5"></textarea>
             <br>
             <button type="submit" id="note-save">Save</button>
@@ -82,4 +84,5 @@
 {{!-- enter in script --}}
 <script src="/js/newBackground.js"></script>
 <script src="/js/instant.js"></script>
+<script src="/js/logs.js"></script>
 
