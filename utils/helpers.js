@@ -1,3 +1,4 @@
+
 // helper functions
 module.exports = {
     // creates a random space event
@@ -9,7 +10,7 @@ module.exports = {
             'ALERT: Meteoroid Shower Closing In, Change Course!', 
             'ALERT: You are Currently in a Supernova Kill Zone!',
             'ALERT: Vacuum Leak Detected!', 
-            'ALERT: Mankind was born on Earth, it was never meant to die there...', 
+            'ALERT: "Mankind was born on Earth, it was never meant to die there..."', 
             'ALERT: SPACE WORMS', 
             'ALERT: SPACE PIRATES', 
             'ALERT: Unknown Impact! Investigate!', 
@@ -22,6 +23,11 @@ module.exports = {
     
             return event;
     },
+    setAudio: () => {
+        const media_src = 'https://open.spotify.com/track/6dkJvNZ7DJWzTFXv3KHmoT?si=abb79546f6024d63'
+        console.log('media src: ' + media_src);
 
+        return "hello";
+    }
 }
 
