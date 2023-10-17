@@ -1,6 +1,7 @@
 * {
   font-family: "Pixelify Sans", sans-serif;
   color: #00d200;
+  z-index: 1;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 h1 {
   color: #00d200;
@@ -178,12 +180,7 @@ h4 {
 .link-mission:hover {
   transform: scale(1.05);
 }
-#logout-icon {
-  position: fixed;
-  margin-top: 2%;
-  margin-left: 3%;
-  z-index: 999;
-}
+
 #log-page {
   border: 2px green solid;
   background: rgba(18, 19, 19, 0.9);
@@ -282,4 +279,12 @@ h4 {
   padding-left: 3.5%;
 
  
+}
+
+#logout-icon {
+  color: #00d200;
+  position: fixed;
+  margin-top: 2%;
+  margin-left: 3%;
+  z-index: 999;
 }
