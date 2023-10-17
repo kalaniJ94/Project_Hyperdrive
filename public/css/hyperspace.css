@@ -123,10 +123,8 @@ main {
         font-size: 25px;
       }
 
-      #logout-icon {
+      /* #logout-icon{
         position: fixed;
-        margin-top: 2%;
-        margin-left: 3%;
-        z-index: 999;
+        color: #00d200;
       }
 
