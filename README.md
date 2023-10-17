@@ -86,9 +86,20 @@ Once you arrive, you will notice your mission count will go up, and mission succ
 ## Credits
 
 
-Picsart AI Image Generator
+PicsArt AI Image Generator
 https://picsart.com/
 
+W3Schools 
+https://www.w3schools.com/
+
+MDN 
+https://developer.mozilla.org/en-US/
+
+Procreate
+https://procreate.com/
+
+Cockpit Image 
+https://www.cgtrader.com/3d-models/space/spaceship/spaceship-cockpit-v3-3bc93fbe-30e2-45cd-9145-7794311bf917
 
 ## License
 MIT License
