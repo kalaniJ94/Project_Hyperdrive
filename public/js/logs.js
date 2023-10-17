@@ -21,7 +21,7 @@ async function logGenerator(){
 
 async function hideLog(){
         const log = document.querySelector('#log-page');
-        if (log.className.value === "hidden"){
+        if (log.className === "hidden"){
         log.className = "visible";
         } else {
            log.className ="hidden"; 
