@@ -69,8 +69,7 @@ To start this app for the first time, you will need to access mysql, and begin y
 
 FInally, enter "npm start" to initialize the Express engine. The app will start, and you will be free to browse the app using localhost!
 
-(Heroku Users)
-Insert heroku instructions
+
 
 ## Usage
 
@@ -127,9 +126,9 @@ SOFTWARE.
 
 ## Badges
 
-![Static Badge](https://img.shields.io/badge/CSS-83.5%-purple)
-![Static Badge](https://img.shields.io/badge/Javascript-9.1%-yellow)
-![Static Badge](https://img.shields.io/badge/Handlebars-7.4%-orange)
+![Static Badge](https://img.shields.io/badge/CSS-86.2%-purple)
+![Static Badge](https://img.shields.io/badge/Javascript-9.2%-yellow)
+![Static Badge](https://img.shields.io/badge/Handlebars-4.6%-orange)
 
 
 ## How to Contribute
